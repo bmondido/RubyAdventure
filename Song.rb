@@ -59,6 +59,17 @@ class MyLogger
 	end
 end
 
+class AccessClass
+	private
+		def private_method
+			puts "Calling a private method!";
+		end
+	protected
+		def protected_method
+			puts "Calling a protected method..";
+		end
+end
+
 song = Song.new("Ruby","Cake", 240)
 puts song
 rockSong = RockSong.new("Make a Sound", "Autopilot Off", 348,11)
